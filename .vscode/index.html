@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Cine vs Streaming</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <h1>Cine vs Streaming</h1>
+    </header>
+    <main class="formulario">
+        <p>Calcula tu gasto en plataformas Streaming vs gastos de ir al Cine </p>
+        <form class="formulario__inputs">
+            <label class="input__number">¿Cuántas películas vez al mes?
+                <input type="number" id="peliculasCine" >
+                <p>Costo promedio de entrada 21.70</p>
+            </label>
+            <p>¿Qué plataformas de streaming usas?</p>
+            <label class="input__checkbox">
+                <input type="checkbox" id="netflix" value="1">
+                Netflix - S/44.90
+            </label>
+            <label class="input__checkbox">
+                <input type="checkbox" id="disney" value="1" >
+                Disney Plus - S/25.90
+            </label>
+            <label class="input__checkbox">
+                <input type="checkbox" id="amazon" value="1" >
+                PrimeVideo - S/16.90            
+            </label>            
+            <label class="input__checkbox">
+                <input type="checkbox" id="hbo" value="1" >
+                HBO Go - S/34.90
+            </label>
+            <button class="button"type="button" onclick = "calcular()">Comparar</button>
+        </form>
+        <section class="resultados">
+            <p id="resultadoCine"></p>
+            <p id="resultadoStreaming"></p>
+            <p id="resultadoVs"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Elaborado por:
+            <a href="https://twitter.com/jtafurh">Jeaneth Tafur</a>
+        </p>
+    </footer>
+    <script src="./plataformas.js"></script>
+    <script src="./comparacion.js"></script>
+</body>
+</html>
